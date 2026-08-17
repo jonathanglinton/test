@@ -1,0 +1,102 @@
+{
+  "run_id": "PITCH_INBOX_20260513_120000",
+  "phase": "complete",
+  "last_successful_refresh": "2026-08-16T01:58:59.197272Z",
+  "lookback_window": {
+    "days": 90,
+    "since": "2026-02-13",
+    "until": "2026-05-13"
+  },
+  "sources": {
+    "yellowbrick": {
+      "status": "complete",
+      "records_found": 3,
+      "records_accepted": 2,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "buyside_digest": {
+      "status": "complete",
+      "records_found": 2,
+      "records_accepted": 1,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "vic": {
+      "status": "complete",
+      "records_found": 5,
+      "records_accepted": 1,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "sumzero": {
+      "status": "unavailable",
+      "records_found": 0,
+      "records_accepted": 0,
+      "error": "Login required - snippet feed unavailable",
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "substack_reits": {
+      "status": "complete",
+      "records_found": 4,
+      "records_accepted": 1,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "seeking_alpha": {
+      "status": "complete",
+      "records_found": 8,
+      "records_accepted": 1,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "fund_letters": {
+      "status": "complete",
+      "records_found": 2,
+      "records_accepted": 1,
+      "error": null,
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "broker_email": {
+      "status": "unavailable",
+      "records_found": 0,
+      "records_accepted": 0,
+      "error": "Disabled in V1 - enable email_connector",
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    },
+    "internal_email": {
+      "status": "unavailable",
+      "records_found": 0,
+      "records_accepted": 0,
+      "error": "Disabled in V1 - enable email_connector",
+      "last_checked": "2026-08-16T01:58:59.197272Z"
+    }
+  },
+  "counts": {
+    "total_collected": 24,
+    "accepted": 7,
+    "rejected_no_thesis": 9,
+    "rejected_coverage_mismatch": 6,
+    "rejected_generic_news": 2,
+    "duplicates": 1,
+    "new_staged": 6,
+    "ambiguous_routed_to_qa": 1
+  },
+  "errors": [],
+  "dashboard_path": "pitch_inbox.html",
+  "feed_path": "pitches.jsonl",
+  "quality_gates": {
+    "config_integrity": "pass",
+    "source_minimum": "pass",
+    "record_schema": "pass",
+    "coverage_match": "pass",
+    "pitch_quality": "pass",
+    "link_quality": "pass",
+    "deduplication": "pass",
+    "copyright_boundary": "pass",
+    "feed_consistency": "pass",
+    "dashboard_completeness": "pass",
+    "responsive_layout": "pass",
+    "source_disclosure": "pass"
+  }
+}
