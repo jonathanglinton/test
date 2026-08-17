@@ -35,8 +35,15 @@ def fmt_price(v):
     try: return f"${float(v):.2f}"
     except: return str(v)
 
+def feed_metadata(records, state):
+    """Prefer metadata carried by the feed over stale render-state metadata."""
+    latest = max(records, key=lambda r: r.get("discovered_at", ""), default={})
+    updated = latest.get("discovered_at") or state.get("last_successful_refresh", "")
+    run_id = latest.get("run_id") or state.get("run_id", "")
+    return updated, run_id
+
 def render_html(records, state, coverage, sources, output_path):
-    last_refresh = state.get("last_successful_refresh","")
+    last_refresh, feed_run_id = feed_metadata(records, state)
     try:
         dt = datetime.fromisoformat(last_refresh.replace("Z","+00:00"))
         last_refresh_str = dt.strftime("%Y-%m-%d %H:%M UTC")
@@ -69,7 +76,7 @@ def render_html(records, state, coverage, sources, output_path):
     html.append(".open{grid-column:2;grid-row:1/span 5;align-self:start;font-size:11px;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:6px 10px;border-radius:999px;margin-top:2px} .open:hover{color:var(--text);border-color:var(--text)} @media(max-width:640px){.item{grid-template-columns:1fr} .open{grid-column:1;justify-self:start}}")
     html.append("footer{margin-top:24px;color:var(--muted);font-size:11px;border-top:1px solid var(--border);padding-top:16px}")
     html.append("</style></head><body><div class='wrap'><header><h1>Pitch Inbox — Full Coverage + Yahoo Finance</h1><div class='meta'>")
-    html.append(f"<span>Last refresh: <b>{escape(last_refresh_str)}</b></span><span>Feed: <b>{total} pitches</b></span><span>Window: <b>90 days</b></span><span>Run: <b>{escape(state.get('run_id',''))}</b></span></div><div class='coverage'><span style='color:var(--muted)'>Sources:</span>")
+    html.append(f"<span>Feed updated: <b>{escape(last_refresh_str)}</b></span><span>Feed: <b>{total} pitches</b></span><span>Window: <b>90 days</b></span><span>Feed run: <b>{escape(feed_run_id)}</b></span></div><div class='coverage'><span style='color:var(--muted)'>Sources:</span>")
     for sid, info in src_status.items():
         st = info.get("status","unknown"); cls="ok" if st=="complete" else "fail" if st=="failed" else "unavail"; label=f"{sid} {st}";
         html.append(f"<span class='chip {cls}'>{escape(label)}</span>")
