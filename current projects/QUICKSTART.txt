@@ -1,0 +1,7 @@
+PITCH INBOX FULL - WITH YAHOO + INSIDER FLAGGING
+Expanded: REITs + Housing + Renewables + Event-Driven (63 tickers, 24 pitches)
+Yahoo: price, mkt cap, 52w, insider sales flagged ⚠️
+
+pip install yfinance pandas
+python build.py
+python refresh.py
