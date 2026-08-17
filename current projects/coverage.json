@@ -1,0 +1,958 @@
+{
+  "meta": {
+    "universe_name": "REIT Coverage Universe V1",
+    "version": "1.0",
+    "updated_at": "2026-08-16T02:04:24.876801",
+    "description": "Expanded coverage: REITs + Housing + Renewables + Event-Driven / Merger Arb. Exact and sector matches allowed, ambiguous symbols require company-name confirmation.",
+    "source": "Derived from REIT Ideas workflow - keep small and machine-readable"
+  },
+  "sectors": [
+    "REITs",
+    "Housing",
+    "Renewables",
+    "Event-Driven"
+  ],
+  "subsectors": [
+    "Office",
+    "Industrial",
+    "Residential",
+    "Retail",
+    "Life Science",
+    "Data Center",
+    "Self-Storage",
+    "Healthcare",
+    "Net Lease",
+    "Infrastructure",
+    "Lodging",
+    "Gaming",
+    "Timber",
+    "Diversified",
+    "Homebuilders",
+    "Building Products",
+    "Single Family Rental",
+    "Solar",
+    "Wind",
+    "YieldCo",
+    "Fuel Cell",
+    "Hydrogen",
+    "Utility-Scale Renewables",
+    "Merger Arb",
+    "Special Situations",
+    "SPAC Arb"
+  ],
+  "tickers": [
+    {
+      "primary_ticker": "ARE",
+      "company": "Alexandria Real Estate Equities",
+      "sector": "REITs",
+      "subsector": "Life Science",
+      "aliases": [
+        "Alexandria",
+        "Alexandria Real Estate",
+        "ARE"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "PLD",
+      "company": "Prologis",
+      "sector": "REITs",
+      "subsector": "Industrial",
+      "aliases": [
+        "Prologis"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "AMT",
+      "company": "American Tower",
+      "sector": "REITs",
+      "subsector": "Infrastructure",
+      "aliases": [
+        "American Tower",
+        "AMT"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "EQIX",
+      "company": "Equinix",
+      "sector": "REITs",
+      "subsector": "Data Center",
+      "aliases": [
+        "Equinix"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "DLR",
+      "company": "Digital Realty Trust",
+      "sector": "REITs",
+      "subsector": "Data Center",
+      "aliases": [
+        "Digital Realty",
+        "Digital Realty Trust"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "AVB",
+      "company": "AvalonBay Communities",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "AvalonBay",
+        "AvalonBay Communities"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "EQR",
+      "company": "Equity Residential",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "Equity Residential"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "PSA",
+      "company": "Public Storage",
+      "sector": "REITs",
+      "subsector": "Self-Storage",
+      "aliases": [
+        "Public Storage"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "EXR",
+      "company": "Extra Space Storage",
+      "sector": "REITs",
+      "subsector": "Self-Storage",
+      "aliases": [
+        "Extra Space Storage",
+        "Extra Space"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "SPG",
+      "company": "Simon Property Group",
+      "sector": "REITs",
+      "subsector": "Retail",
+      "aliases": [
+        "Simon Property",
+        "Simon Property Group"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "O",
+      "company": "Realty Income",
+      "sector": "REITs",
+      "subsector": "Net Lease",
+      "aliases": [
+        "Realty Income"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "WELL",
+      "company": "Welltower",
+      "sector": "REITs",
+      "subsector": "Healthcare",
+      "aliases": [
+        "Welltower"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "VTR",
+      "company": "Ventas",
+      "sector": "REITs",
+      "subsector": "Healthcare",
+      "aliases": [
+        "Ventas"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CCI",
+      "company": "Crown Castle",
+      "sector": "REITs",
+      "subsector": "Infrastructure",
+      "aliases": [
+        "Crown Castle"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "SBAC",
+      "company": "SBA Communications",
+      "sector": "REITs",
+      "subsector": "Infrastructure",
+      "aliases": [
+        "SBA Communications",
+        "SBA Comm"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "BXP",
+      "company": "Boston Properties",
+      "sector": "REITs",
+      "subsector": "Office",
+      "aliases": [
+        "Boston Properties",
+        "BXP Inc"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "VICI",
+      "company": "VICI Properties",
+      "sector": "REITs",
+      "subsector": "Gaming",
+      "aliases": [
+        "VICI Properties",
+        "VICI"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "INVH",
+      "company": "Invitation Homes",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "Invitation Homes"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "MAA",
+      "company": "Mid-America Apartment Communities",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "Mid-America Apartment",
+        "MAA"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "KIM",
+      "company": "Kimco Realty",
+      "sector": "REITs",
+      "subsector": "Retail",
+      "aliases": [
+        "Kimco",
+        "Kimco Realty"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "REG",
+      "company": "Regency Centers",
+      "sector": "REITs",
+      "subsector": "Retail",
+      "aliases": [
+        "Regency Centers",
+        "Regency"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "FRT",
+      "company": "Federal Realty Investment Trust",
+      "sector": "REITs",
+      "subsector": "Retail",
+      "aliases": [
+        "Federal Realty"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "STAG",
+      "company": "STAG Industrial",
+      "sector": "REITs",
+      "subsector": "Industrial",
+      "aliases": [
+        "STAG Industrial"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "REXR",
+      "company": "Rexford Industrial Realty",
+      "sector": "REITs",
+      "subsector": "Industrial",
+      "aliases": [
+        "Rexford Industrial",
+        "Rexford"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "AMH",
+      "company": "American Homes 4 Rent",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "American Homes 4 Rent",
+        "AMH"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "ESS",
+      "company": "Essex Property Trust",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "Essex Property Trust",
+        "Essex Property"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "UDR",
+      "company": "UDR Inc",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "UDR"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CPT",
+      "company": "Camden Property Trust",
+      "sector": "REITs",
+      "subsector": "Residential",
+      "aliases": [
+        "Camden Property Trust",
+        "Camden Property"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "HST",
+      "company": "Host Hotels & Resorts",
+      "sector": "REITs",
+      "subsector": "Lodging",
+      "aliases": [
+        "Host Hotels",
+        "Host Hotels & Resorts"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CUBE",
+      "company": "CubeSmart",
+      "sector": "REITs",
+      "subsector": "Self-Storage",
+      "aliases": [
+        "CubeSmart"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "DOC",
+      "company": "Healthpeak Properties",
+      "sector": "REITs",
+      "subsector": "Healthcare",
+      "aliases": [
+        "Healthpeak Properties",
+        "Healthpeak"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "KRC",
+      "company": "Kilroy Realty",
+      "sector": "REITs",
+      "subsector": "Office",
+      "aliases": [
+        "Kilroy Realty",
+        "Kilroy"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "SLG",
+      "company": "SL Green Realty",
+      "sector": "REITs",
+      "subsector": "Office",
+      "aliases": [
+        "SL Green",
+        "SL Green Realty"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "NNN",
+      "company": "NNN REIT",
+      "sector": "REITs",
+      "subsector": "Net Lease",
+      "aliases": [
+        "NNN REIT",
+        "National Retail Properties"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "WY",
+      "company": "Weyerhaeuser",
+      "sector": "REITs",
+      "subsector": "Timber",
+      "aliases": [
+        "Weyerhaeuser"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "DHI",
+      "company": "D.R. Horton",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "D.R. Horton",
+        "DR Horton",
+        "DHI"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "LEN",
+      "company": "Lennar",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "Lennar"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "PHM",
+      "company": "PulteGroup",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "PulteGroup",
+        "Pulte"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "TOL",
+      "company": "Toll Brothers",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "Toll Brothers",
+        "Toll"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "NVR",
+      "company": "NVR Inc",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "NVR"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "KBH",
+      "company": "KB Home",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "KB Home",
+        "KBH"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "BLDR",
+      "company": "Builders FirstSource",
+      "sector": "Housing",
+      "subsector": "Building Products",
+      "aliases": [
+        "Builders FirstSource",
+        "Builders First Source"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "OC",
+      "company": "Owens Corning",
+      "sector": "Housing",
+      "subsector": "Building Products",
+      "aliases": [
+        "Owens Corning"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "MAS",
+      "company": "Masco",
+      "sector": "Housing",
+      "subsector": "Building Products",
+      "aliases": [
+        "Masco"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "MTH",
+      "company": "Meritage Homes",
+      "sector": "Housing",
+      "subsector": "Homebuilders",
+      "aliases": [
+        "Meritage Homes",
+        "Meritage"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "NEE",
+      "company": "NextEra Energy",
+      "sector": "Renewables",
+      "subsector": "Utility-Scale Renewables",
+      "aliases": [
+        "NextEra Energy",
+        "NextEra"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "NEP",
+      "company": "NextEra Energy Partners",
+      "sector": "Renewables",
+      "subsector": "YieldCo",
+      "aliases": [
+        "NextEra Energy Partners",
+        "NEP"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "BE",
+      "company": "Bloom Energy",
+      "sector": "Renewables",
+      "subsector": "Fuel Cell",
+      "aliases": [
+        "Bloom Energy"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "FSLR",
+      "company": "First Solar",
+      "sector": "Renewables",
+      "subsector": "Solar",
+      "aliases": [
+        "First Solar"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "ENPH",
+      "company": "Enphase Energy",
+      "sector": "Renewables",
+      "subsector": "Solar",
+      "aliases": [
+        "Enphase Energy",
+        "Enphase"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "RUN",
+      "company": "Sunrun",
+      "sector": "Renewables",
+      "subsector": "Solar",
+      "aliases": [
+        "Sunrun"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "SEDG",
+      "company": "SolarEdge",
+      "sector": "Renewables",
+      "subsector": "Solar",
+      "aliases": [
+        "SolarEdge"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "BEP",
+      "company": "Brookfield Renewable Partners",
+      "sector": "Renewables",
+      "subsector": "YieldCo",
+      "aliases": [
+        "Brookfield Renewable",
+        "Brookfield Renewable Partners"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CWEN",
+      "company": "Clearway Energy",
+      "sector": "Renewables",
+      "subsector": "YieldCo",
+      "aliases": [
+        "Clearway Energy",
+        "Clearway"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "AES",
+      "company": "AES Corp",
+      "sector": "Renewables",
+      "subsector": "Utility-Scale Renewables",
+      "aliases": [
+        "AES Corp",
+        "AES Corporation"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "X",
+      "company": "United States Steel",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "U.S. Steel",
+        "US Steel",
+        "United States Steel"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "SAVE",
+      "company": "Spirit Airlines",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "Spirit Airlines",
+        "Spirit"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "JBLU",
+      "company": "JetBlue Airways",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "JetBlue",
+        "JetBlue Airways"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "PARA",
+      "company": "Paramount Global",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "Paramount Global",
+        "Paramount"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CTLT",
+      "company": "Catalent",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "Catalent"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "HUBS",
+      "company": "HubSpot",
+      "sector": "Event-Driven",
+      "subsector": "Special Situations",
+      "aliases": [
+        "HubSpot"
+      ],
+      "ambiguous": false
+    },
+    {
+      "primary_ticker": "CC",
+      "company": "Chemours",
+      "sector": "Event-Driven",
+      "subsector": "Special Situations",
+      "aliases": [
+        "Chemours"
+      ],
+      "ambiguous": true
+    },
+    {
+      "primary_ticker": "WBD",
+      "company": "Warner Bros Discovery",
+      "sector": "Event-Driven",
+      "subsector": "Merger Arb",
+      "aliases": [
+        "Warner Bros Discovery",
+        "WBD"
+      ],
+      "ambiguous": false
+    }
+  ],
+  "sector_match_rules": {
+    "allow_sector_match": true,
+    "sector_match_requires_thesis": true,
+    "sector_keywords": {
+      "Data Center": [
+        "data center reit"
+      ],
+      "Gaming": [
+        "gaming reit",
+        "casino reit"
+      ],
+      "Healthcare": [
+        "healthcare reit",
+        "medical office",
+        "senior housing"
+      ],
+      "Industrial": [
+        "industrial reit",
+        "logistics",
+        "warehouse"
+      ],
+      "Infrastructure": [
+        "tower reit",
+        "cell tower",
+        "infrastructure reit"
+      ],
+      "Life Science": [
+        "life science",
+        "lab space"
+      ],
+      "Lodging": [
+        "lodging reit",
+        "hotel reit"
+      ],
+      "Net Lease": [
+        "net lease",
+        "triple net"
+      ],
+      "Office": [
+        "office reit",
+        "office properties"
+      ],
+      "Residential": [
+        "apartment reit",
+        "multifamily",
+        "single family rental",
+        "sfr"
+      ],
+      "Retail": [
+        "retail reit",
+        "shopping center",
+        "mall"
+      ],
+      "Self-Storage": [
+        "self-storage",
+        "storage reit"
+      ],
+      "Homebuilders": [
+        "homebuilder",
+        "home builder",
+        "single family construction"
+      ],
+      "Building Products": [
+        "building products",
+        "building materials"
+      ],
+      "Solar": [
+        "solar reit",
+        "solar company",
+        "residential solar"
+      ],
+      "YieldCo": [
+        "yieldco",
+        "renewable yield"
+      ],
+      "Merger Arb": [
+        "merger arb",
+        "merger arbitrage",
+        "takeover",
+        "acquisition target",
+        "buyout"
+      ],
+      "Special Situations": [
+        "special situation",
+        "spin-off",
+        "spinoff",
+        "event-driven"
+      ]
+    }
+  },
+  "ambiguous_symbol_rules": {
+    "ARE": {
+      "require_any": [
+        "alexandria real estate",
+        "alexandria real estate equities",
+        "life science reit are"
+      ],
+      "reason": "Ticker 'ARE' is common English word. Require company name or 'life science' + REIT context",
+      "case_insensitive": true
+    },
+    "O": {
+      "require_any": [
+        "realty income",
+        "ticker o",
+        "nyse:o"
+      ],
+      "reason": "Single letter 'O' collides everywhere. Require explicit Realty Income mention",
+      "case_insensitive": true
+    },
+    "WELL": {
+      "require_any": [
+        "welltower",
+        "well tower"
+      ],
+      "reason": "'WELL' is common adverb. Require company name",
+      "case_insensitive": true
+    },
+    "AMT": {
+      "require_any": [
+        "american tower",
+        "tower reit amt"
+      ],
+      "reason": "'AMT' = amount abbreviation. Require company name",
+      "case_insensitive": true
+    },
+    "CUBE": {
+      "require_any": [
+        "cubesmart",
+        "cube smart"
+      ],
+      "reason": "'CUBE' is common noun. Require company name",
+      "case_insensitive": true
+    },
+    "DOC": {
+      "require_any": [
+        "healthpeak",
+        "healthpeak properties"
+      ],
+      "reason": "'DOC' collides with doctor/document. Require company name",
+      "case_insensitive": true
+    },
+    "CPT": {
+      "require_any": [
+        "camden property",
+        "camden property trust"
+      ],
+      "reason": "'CPT' medical abbreviation. Require Camden",
+      "case_insensitive": true
+    },
+    "ESS": {
+      "require_any": [
+        "essex property",
+        "essex property trust"
+      ],
+      "reason": "'ESS' ambiguous. Require Essex",
+      "case_insensitive": true
+    },
+    "MAA": {
+      "require_any": [
+        "mid-america apartment",
+        "mid america apartment"
+      ],
+      "reason": "Short symbol, require full name",
+      "case_insensitive": true
+    },
+    "KIM": {
+      "require_any": [
+        "kimco",
+        "kimco realty"
+      ],
+      "reason": "'Kim' is first name. Require Kimco",
+      "case_insensitive": true
+    },
+    "REG": {
+      "require_any": [
+        "regency centers",
+        "regency"
+      ],
+      "reason": "'REG' abbreviation. Require Regency context",
+      "case_insensitive": true
+    },
+    "STAG": {
+      "require_any": [
+        "stag industrial"
+      ],
+      "reason": "'STAG' common word. Require STAG Industrial",
+      "case_insensitive": true
+    },
+    "WY": {
+      "require_any": [
+        "weyerhaeuser"
+      ],
+      "reason": "Two-letter symbol, require company name",
+      "case_insensitive": true
+    },
+    "OC": {
+      "require_any": [
+        "owens corning"
+      ],
+      "reason": "OC ambiguous, require Owens Corning",
+      "case_insensitive": true
+    },
+    "BE": {
+      "require_any": [
+        "bloom energy"
+      ],
+      "reason": "BE = be verb, require company",
+      "case_insensitive": true
+    },
+    "RUN": {
+      "require_any": [
+        "sunrun"
+      ],
+      "reason": "RUN common verb, require Sunrun",
+      "case_insensitive": true
+    },
+    "AES": {
+      "require_any": [
+        "aes corp",
+        "aes corporation"
+      ],
+      "reason": "AES common acronym, require AES Corp",
+      "case_insensitive": true
+    },
+    "X": {
+      "require_any": [
+        "u.s. steel",
+        "us steel",
+        "united states steel",
+        "nyse:x"
+      ],
+      "reason": "Single letter X collides, require US Steel",
+      "case_insensitive": true
+    },
+    "CC": {
+      "require_any": [
+        "chemours"
+      ],
+      "reason": "CC ambiguous, require Chemours",
+      "case_insensitive": true
+    }
+  }
+}
