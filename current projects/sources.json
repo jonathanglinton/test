@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated_at": "2026-05-13",
+    "description": "Source registry for Pitch Inbox. Each source ends complete/unavailable/failed. Degrade cleanly when one family is unavailable.",
+    "lookback_default_days": 90,
+    "deduplication_note": "canonical URL or source-native ID controls first; fallback fingerprint = source + primary ticker + normalized title + publication date"
+  },
+  "sources": [
+    {
+      "id": "yellowbrick",
+      "name": "Yellowbrick",
+      "type": "pitch_platform",
+      "family": "pitch_platforms",
+      "priority": 1,
+      "access_mode": "public_api",
+      "lookback_days": 90,
+      "enabled": true,
+      "description": "Trending/long-form investment pitch feed",
+      "requires_auth": false,
+      "expected_fields": [
+        "title",
+        "url",
+        "published_at",
+        "author"
+      ],
+      "caveats": "Rate-limited. Returns trending only."
+    },
+    {
+      "id": "buyside_digest",
+      "name": "BuySide Digest",
+      "type": "pitch_platform",
+      "family": "pitch_platforms",
+      "priority": 1,
+      "access_mode": "web_feed",
+      "lookback_days": 90,
+      "enabled": true,
+      "description": "Curated long-form pitch platform",
+      "requires_auth": false,
+      "caveats": "Scraping may need fallback."
+    },
+    {
+      "id": "vic",
+      "name": "Value Investors Club",
+      "type": "open_web",
+      "family": "open_web",
+      "priority": 2,
+      "access_mode": "web_search",
+      "lookback_days": 180,
+      "enabled": true,
+      "description": "VIC public ideas - thesis required",
+      "requires_auth": false,
+      "caveats": "Membership required for full text; store metadata + link only."
+    },
+    {
+      "id": "sumzero",
+      "name": "SumZero",
+      "type": "open_web",
+      "family": "open_web",
+      "priority": 2,
+      "access_mode": "web_search",
+      "lookback_days": 180,
+      "enabled": true,
+      "description": "Public results/snippets",
+      "requires_auth": false,
+      "caveats": "Snippets only - copyright boundary."
+    },
+    {
+      "id": "substack_reits",
+      "name": "Substack REITs",
+      "type": "open_web",
+      "family": "open_web",
+      "priority": 2,
+      "access_mode": "rss",
+      "lookback_days": 60,
+      "enabled": true,
+      "description": "Selected investment publications via Substack RSS",
+      "requires_auth": false,
+      "caveats": "Filter for explicit company thesis."
+    },
+    {
+      "id": "seeking_alpha",
+      "name": "Seeking Alpha",
+      "type": "open_web",
+      "family": "open_web",
+      "priority": 3,
+      "access_mode": "web_search",
+      "lookback_days": 30,
+      "enabled": true,
+      "description": "Thesis articles when accessible",
+      "requires_auth": false,
+      "caveats": "Paywall often. Link only, no excerpt."
+    },
+    {
+      "id": "fund_letters",
+      "name": "Fund Letters",
+      "type": "open_web",
+      "family": "open_web",
+      "priority": 2,
+      "access_mode": "web_search",
+      "lookback_days": 365,
+      "enabled": true,
+      "description": "Named fund letters / manager commentary",
+      "requires_auth": false,
+      "caveats": "Quarterly cadence. Keep only company-specific thesis."
+    },
+    {
+      "id": "broker_email",
+      "name": "Broker Email",
+      "type": "inbox",
+      "family": "inbox",
+      "priority": 1,
+      "access_mode": "email_connector",
+      "lookback_days": 30,
+      "enabled": false,
+      "description": "Broker emails containing explicit company thesis",
+      "requires_auth": true,
+      "caveats": "Disabled in V1 local run. Enable when Gmail connector configured. Only explicit thesis qualifies."
+    },
+    {
+      "id": "internal_email",
+      "name": "Internal Email",
+      "type": "inbox",
+      "family": "inbox",
+      "priority": 1,
+      "access_mode": "email_connector",
+      "lookback_days": 30,
+      "enabled": false,
+      "description": "Internal team pitches forwarded via email",
+      "requires_auth": true,
+      "caveats": "Disabled in V1 local run."
+    }
+  ]
+}
